@@ -372,8 +372,8 @@ span {
         left: 3rem;
     }
     body {
-        overflow-x: hidden;
-        overflow-y: auto;
+        overflow: hidden;
+        // overflow-y: auto;
     }
     .main-title {
         font-size: 4rem;
@@ -431,8 +431,8 @@ span {
         right: 0;
     }
     body {
-        overflow-x: hidden;
-        overflow-y: auto;
+        overflow: hidden;
+        // overflow-y: auto;
     }
     @mixin font-numbers {
         font-family: Poppins;
