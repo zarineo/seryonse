@@ -9,7 +9,6 @@ $aliz: #E32636;
 html {
     height: 100%;
 }
-
 body {
     height: 100%;
 }
@@ -21,15 +20,12 @@ section {
 header {
     flex: 0 0 auto;
 }
-
 main {
     flex: 1 0 auto;
 }
-
 footer {
     flex: 0 0 auto;
 }
-
 .wrapper {
     height: 100%;
 }
@@ -211,7 +207,6 @@ body {
     left: 310px;
     height: 100vh;
     width: 36rem;
-    border-width: 0px, 1px, 0px, 1px;
     border-style: solid;
     border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 72.4%);
     background: linear-gradient(160deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 72.4%);
@@ -347,7 +342,7 @@ span {
         height: 100vh;
         left: 7rem;
         padding: 3rem;
-        padding-top: 20vh;
+        padding-top: 8vh;
     }
     .contacts {
         margin-top:2rem;
@@ -367,7 +362,7 @@ span {
 
 @media screen and (max-width: 820px) {
     .modal {
-        padding-top: 10vh;
+        padding-top: 8vh;
         width: 34rem;
         left: 3rem;
     }
@@ -384,8 +379,9 @@ span {
     #planet-right {
         width: 787.26px;
         height: 787.26px;
-        top: 765.77px;
-        left: 257px;
+        right: 0;
+        bottom: 0;        // top: 765.77px;
+        // left: 257px;
         offset-rotate: 22.46deg;
     }
     .scale-left,
@@ -434,6 +430,7 @@ span {
         overflow: hidden;
         // overflow-y: auto;
     }
+
     @mixin font-numbers {
         font-family: Poppins;
         font-size: 9px;
