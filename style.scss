@@ -1,0 +1,398 @@
+﻿$orange: #D54113;
+$maroon: #800000;
+$sienna: #A0522D;
+$tomato: #FF6347;
+$darkRed: #5B0000;
+$blue: #191970;
+
+@keyframes loading {
+    0% {
+       width: 0.375rem;
+    }
+    100% {
+       width: 20.375rem;
+    }
+}
+
+@keyframes dott-loading {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 20.375rem;
+    }
+}
+@mixin font-description {
+    font-family: 'Anonymous Pro';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+@mixin font-numbers {
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+@mixin links {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    overflow: hidden;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+#planet-left {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 8.25rem;
+}
+
+#black-planet {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom:0;
+    z-index:-1;
+}
+.scale__container {
+    display: flex;
+    position: absolute;
+    right: 12.18rem;    
+    top: 2rem;
+    flex-wrap: wrap;
+    width: 400px;
+    align-items: center;
+}
+// ШКАЛЫ РАЗНЫМИ ЦВЕТАМИ
+.scale__lines {
+    display: flex;
+    margin-bottom: 19px;
+    margin: auto;
+    font-size: 14px;
+}
+#thirty,
+#seventh {
+    margin-right: 0;
+}
+
+.scale__line  {
+    margin-right: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.orange:hover {
+    color: $orange;
+    transition: 0.21s;
+    
+}
+.sienna:hover {
+    color: $sienna;
+}
+.maroon:hover {
+    color: $maroon;
+    transition: 1s;
+}
+.tomato:hover {
+    color: $orange;
+}
+.dark:hover {
+    color: $blue;
+}
+.darkRed:hover {
+    color: $darkRed;
+}
+
+// .scale {
+//     position: absolute;
+//     top: 2rem;
+//     right: 12.18rem;
+// }
+.scale-left {
+    display: block;
+    margin-top: 0.4*100vh;
+    margin-left: 2.65rem;
+}
+
+.numbers {
+    @include font-numbers;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.modal {
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+    left: 310px;
+    height: auto;
+    width: 36rem;
+    border-width: 0px, 1px, 0px, 1px;
+    border-style: solid;
+    border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 72.4%);
+    background: linear-gradient(160deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 72.4%);
+    background: linear-gradient(160.61deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 101.7%);
+    padding: 17.3rem 3rem 5.25rem 3rem;
+    backdrop-filter: blur(10px);
+    border-bottom: none;
+}
+#line {
+    padding-bottom: 0.25em;
+}
+
+.main-title {
+    font-family: 'BIZ UDPGothic';
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 70px;
+    margin: 1.9rem 0 1.5rem 0;
+}
+span {
+    color: $orange;
+}
+.main-description {
+    @include font-description;
+    margin-top: 24px;
+}
+.main-text {
+    @include font-description;
+    font-size: 1rem;
+    width: 50%;
+    margin: 0;
+}
+
+.flex-box {
+    display: flex;
+}
+.send-mail {
+    width: 50%;
+    height: 2.5rem;
+    background: white;
+    border-radius: 6px;
+    padding: 0 0.6rem;
+    outline: none;
+    border: none;
+    color: #B0B0B0;
+}
+.contacts {
+    font-family: Noto Sans;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 16.8rem;
+    display: flex;
+}
+.contacts__flex {
+    display: flex;
+    justify-content: space-between;
+}
+.contacts__ceo {
+    margin-left: 4rem;
+}
+.contacts__icon {
+    margin-right: 1rem;
+}
+#loading {
+    background: #282727;
+    width: 30.188rem;
+    height: 0.375rem;
+    margin-top: 3.75rem;
+    margin-bottom: 5.625rem;
+    border-radius: 22px;
+    border: none;
+}
+
+.line-box {
+    background: #282727;
+    width: 30.188rem;
+    height: 0.375rem;
+    margin-top: 3.75rem;
+    margin-bottom: 5.625rem;
+    border-radius: 22px;
+    border: none;
+}
+
+.loading {
+    background: #D54113;
+    width: 20.375rem;
+    height: 0.375rem;
+    border-radius: 22px;
+    border: none;
+    animation: loading 3s;
+}
+
+.dott {
+    position: relative;
+    left: 20.375rem;
+    background: #D54113;
+    width: 0.375rem;
+    height: 0.375rem;
+    border-radius: 22px;
+    box-shadow: 0px 0px 7px 6px #D54113 ;
+    animation: dott-loading 3s;
+}
+//Для допотопных ноутбуков вроде моего и Карининого 
+@media screen and (max-height: 900px) {
+    .modal {
+        width: 34rem;
+        height: 100hv;
+        left: 7rem;
+        padding: 3rem;
+    }
+    .contacts {
+        margin-top:2rem;
+    }
+    #planet-left {
+        width: 700px;
+        right: 0;
+    }
+    #black-planet {
+        width: 500px;
+        bottom: 0;
+    }
+    .line-box {
+        margin: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .modal {
+        width: 34rem;
+        left: 3rem;
+    }
+
+    .main-title {
+        font-size: 4rem;
+    }
+
+    #black-planet {
+        display: none;
+    }
+
+    #planet-left {
+        width: 787.26px;
+        height: 787.26px;
+        top: 765.77px;
+        left: 257px;
+        offset-rotate: 22.46deg;
+    }
+
+    .scale-left,
+    .scale {
+        display: none;
+    }
+
+    .contacts {
+        margin-top: 5.56rem;
+    }
+
+    .contacts__seryonse {
+        order: 5;
+    }
+
+    .contacts__ceo {
+        margin-left: 0rem;
+        margin-right: 1.5rem;
+    }
+
+    #loading {
+        margin-top: 2.81rem;
+        margin-bottom: 3.125rem;
+        width: 27.93rem;
+        height: 6px;
+    }
+}
+@media screen and (max-height: 800px) {
+    .contacts {
+        margin-top: 4.8rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .modal {
+        width: 20.44rem;
+        margin: auto;
+        padding: 10.8rem 1.8rem 0 1.8rem;
+        left: 0;
+        right: 0;
+
+    }
+    @mixin font-numbers {
+        font-family: Poppins;
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .main-title {
+        font-size: 2.44rem;
+    }
+    #black-planet {
+        display: none;
+    }
+    #planet-left {
+        width: 787.26px;
+        height: 787.26px;
+        top: 765.77px;
+        left: 257px;
+        offset-rotate: 22.46deg;
+    }
+    .scale-left,
+    .scale {
+        display: none;
+    }
+    .contacts {
+        margin-top: 5.56rem;
+    }
+    .contacts__seryonse {
+        order: 5;
+    }
+    .contacts__ceo {
+        margin-left: 0rem;
+        margin-right: 1.5rem;
+    }
+    .numbers,
+    .main-text {
+        @include font-numbers;
+    }
+    #line {
+        width: 1.25rem;
+        height: 1px;
+    }
+    .main-description {
+        font-size: 0.8125rem;
+        margin-top: 1.18rem;
+    }
+    #loading {
+        margin-top: 2.81rem;
+        margin-bottom: 3.125rem;
+        width: 16.8125rem;
+        height: 3.86px;
+    }
+    #planet-left {
+        width: 649.6px;
+        height: 649.6px;
+        top: 482.91px;
+        left: 45px;
+        offset-rotate: 22.46deg;
+    }
+}
