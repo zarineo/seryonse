@@ -71,7 +71,6 @@ body {
   right: 12.18rem;
   top: 2rem;
   flex-wrap: wrap;
-  align-items: center;
   height: 100%; }
   .scale__container .numbers {
     font-family: Poppins;
@@ -82,8 +81,7 @@ body {
     text-align: left;
     margin: 0 28px 0 2px;
     cursor: pointer;
-    transition: 0.6s;
-    text-align: center; }
+    transition: 0.6s; }
 
 .scale__left-flex {
   display: flex;
@@ -166,8 +164,7 @@ body {
   text-align: left;
   margin-right: 30px;
   cursor: pointer;
-  transition: 0.6s;
-  text-align: center; }
+  transition: 0.6s; }
 
 .modal {
   position: absolute;
