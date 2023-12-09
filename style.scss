@@ -92,6 +92,13 @@ body {
     block-size: 80%;
     animation: planet-rot 10s;
 }
+#planet-mobile {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    animation: planet-rot 10s;
+}
 
 #black-planet {
     display: block;
@@ -457,12 +464,12 @@ span {
         display: none;
     }
 
-    #planet-right {
-        block-size: 30%;
+    // #planet-right {
+    //     block-size: 30%;
    
-        offset-rotate: 22.46deg;
-        display: block;
-    }
+    //     offset-rotate: 22.46deg;
+    //     display: block;
+    // }
     .scale-left,
     .scale__container {
         display: none;
@@ -523,10 +530,17 @@ span {
         left: 8.5125rem;
     }
     #planet-right {
-        block-size: 50%;
-        bottom: 0;
+        // block-size: 30%;
+        // bottom: 0;
+        // right: 0;
+        // offset-rotate: 22.46deg;
+        display: none;
+    }
+    #planet-mobile {
+        display: block;
+        position: absolute;
         right: 0;
-        offset-rotate: 22.46deg;
+        bottom: 0;
     }
     @keyframes loading {
         0% {
@@ -585,11 +599,17 @@ span {
     }
 
     #planet-right {
-        block-size: 30%;
-        bottom: 0;
-        right: 0;
-        offset-rotate: 22.46deg;
+        // block-size: 30%;
+        // bottom: 0;
+        // right: 0;
+        // offset-rotate: 22.46deg;
+        display: none;
+    }
+    #planet-mobile {
         display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
     }
 
     .scale-left,
