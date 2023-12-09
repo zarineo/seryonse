@@ -264,11 +264,12 @@ span {
         height: 2rem;
         background: white;
         border-radius: 6px;
-        padding: 0.6rem;
+        padding: 0.6rem 0.5rem;
         outline: none;
         border: none;
         color: #B0B0B0;
-        @include font-description;
+        @include font-numbers;
+        font-size: 0.75rem;
         box-sizing: border-box;
     }
 }
