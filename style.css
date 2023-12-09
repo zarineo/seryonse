@@ -53,8 +53,7 @@ body {
   display: none;
   position: absolute;
   right: 0;
-  bottom: 0;
-  animation: planet-rot 10s; }
+  bottom: 0; }
 
 #black-planet {
   display: block;
@@ -404,6 +403,9 @@ span {
 
   #black-planet {
     display: none; }
+
+  #planet-right {
+    display: block; }
 
   .scale-left,
   .scale__container {
