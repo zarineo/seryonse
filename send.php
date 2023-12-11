@@ -1,11 +1,19 @@
 <?php
+if(isset($_POST['email'])) {
     $email = $_POST['email'];
-    $to = "tochilka007@mail.ru"; 
-    $date = date ("d.m.Y"); 
-    $time = date ("h:i");
-    $from = $email;
-    $subject = "Заявка c сайта Seryonse";
-    $msg="
-    Email: $email";   
-  mail($to, $subject, $msg, "From: $to ");
-?>
+    $email = htmlspecialchars($email);
+    $email = urldecode($email);
+    $email = trim($email);
+
+    $to      = 'seryonse@gmail.com'; // Используйте полученный email в качестве адресата
+    $subject = 'Тема письма';
+    $headers = 'From: zayd.makayev@mail.ru' . "\r\n" .
+               'Reply-To: zayd.makayev@mail.ru          ' . "\r\n" .
+               'X-Mailer: PHP/' . phpversion();
+
+    if (mail($to, $subject, $email, $headers)){
+        echo "Письмо отправлено";
+    } else {
+        echo "Не удалось отправить письмо";
+    }
+}
